@@ -51,4 +51,20 @@
   </div>
 </template>
 
-<script src="../js/add-task.js" defer></script>
+<script>
+import { mapState, mapActions } from 'vuex';
+
+export default {
+  computed: {
+    ...mapState(['newTask', 'errors'])
+  },
+  methods: {
+    ...mapActions(['addTask']),
+    onSubmit() {
+      this.addTask().then(() => {
+        this.$router.push('/');
+      });
+    }
+  }
+};
+</script>

@@ -106,5 +106,36 @@
     </div>
   </div>
 </template>
+<script>
+import { mapState, mapActions } from 'vuex';
 
-<script src="../js/tasklist.js" defer></script>
+export default {
+  data() {
+    return {
+      chunkSize: 2,
+      localDisplayedTasks: []
+    };
+  },
+  computed: {
+    ...mapState(['tasks', 'filter']),
+    displayedTasks() {
+      return this.tasks.slice(0, this.localDisplayedTasks.length ?? 0 + this.chunkSize);
+    }
+  },
+  methods: {
+    ...mapActions(['fetchTasks', 'markTaskAsCompleted', 'deleteTask', 'filterTasks']),
+    loadMoreTasks() {
+      const nextChunk = this.tasks.slice(this.localDisplayedTasks.length, this.localDisplayedTasks.length + this.chunkSize);
+      this.localDisplayedTasks = this.localDisplayedTasks.concat(nextChunk);
+    }
+  },
+  watch: {
+    tasks(newTasks) {
+      this.localDisplayedTasks = newTasks.slice(0, this.chunkSize);
+    }
+  },
+  mounted() {
+    this.fetchTasks();
+  }
+};
+</script>
