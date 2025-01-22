@@ -94,22 +94,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.container {
-  margin-top: 30px;
-}
-.card {
-  border-radius: 12px;
-}
-.btn-primary {
-  background-color: #007bff;
-  border: none;
-}
-.btn-primary:hover {
-  background-color: #0056b3;
-}
-.btn-outline-secondary {
-  border-radius: 50px;
-}
-</style>
