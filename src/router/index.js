@@ -1,7 +1,3 @@
-
-import TaskList from '../components/TaskList.vue';
-import TaskForm from '../components/TaskForm.vue';
-
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -10,12 +6,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'TaskList',
-      component: TaskList
+      component: import('../components/TaskList.vue')
     },
     {
       path: '/add-task',
-      name: 'TaskForm',
-      component: TaskForm
+      name: 'AddTask',
+      component: import('../components/AddTask.vue')
     }
   ],
 })
