@@ -1,57 +1,25 @@
-# task-dashboard-frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+# Project Setup Guide
 
-## Recommended IDE Setup
+This guide will walk you through the steps to set up and run the project locally. The project consists of two main parts: **Backend** (PHP Laravel) and **Frontend** (Node.js). Please follow the steps carefully to get the project up and running.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Prerequisites
 
-## Customize configuration
+Make sure you have the following software installed on your local machine:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **PHP** (version 8.1.20)
+- **Composer** (version 2.8.2)
+- **Node.js** (version 22.13.1)
+- **Git**
 
-## Project Setup
+If you don't have these installed, please install them before proceeding.
 
-```sh
-npm install
-```
+## Step-by-Step Setup
 
-### Compile and Hot-Reload for Development
+### 1. Clone the Repository
 
-```sh
-npm run dev
-```
+First, clone the repository to your local machine:
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+```bash
+git clone -b master <base_url>
 ```
