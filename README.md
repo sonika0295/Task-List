@@ -1,6 +1,6 @@
 # Project Setup Guide
 
-This guide will walk you through the steps to set up and run the project locally. The project consists of two main parts: **Backend** (PHP Laravel) and **Frontend** (Node.js). Please follow the steps carefully to get the project up and running.
+This guide will walk you through the steps to set up and run the project locally. The project consists of two main parts: **Backend** (PHP Laravel) and **Frontend** (Vue.js). Please follow the steps carefully to get the project up and running.
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ Make sure you have the following software installed on your local machine:
 - **PHP** (version 8.1.20)
 - **Composer** (version 2.8.2)
 - **Node.js** (version 22.13.1)
-- **Git**
+- **Laravel** (version 10)
 
 If you don't have these installed, please install them before proceeding.
 
@@ -70,16 +70,15 @@ Now, you can start the Laravel development server:
 ```bash
 php artisan serve
 ```
-## Frontend Setup (Node.js)
+## Frontend Setup (Vue.js)
 
-Follow these steps to set up the frontend (Node.js):
+Follow these steps to set up the frontend (Vue.js):
 
 a. Navigate to the Frontend Folder
 ```bash
 cd frontend
 ```
-b. Install Node.js Dependencies
-Install the required Node.js dependencies:
+b. Install Vue.js Dependencies
 
 ```bash
 npm install
