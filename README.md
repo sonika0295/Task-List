@@ -1,7 +1,7 @@
 # Project Setup Guide
 
 This guide will walk you through the steps to set up and run the project locally. The project consists of two main parts: **Backend** (PHP Laravel) and **Frontend** (Vue.js). Please follow the steps carefully to get the project up and running.
-
+`https://drive.google.com/file/d/1YD57FFtnhnlZUN0fBx51eGSkoNnfnHBN/view?usp=sharing` video reference for setup guide
 ## Prerequisites
 
 Make sure you have the following software installed on your local machine:
